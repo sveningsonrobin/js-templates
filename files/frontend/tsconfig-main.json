@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "es6",
+        "target": "es6",
+        "jsx": "react",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "lib": ["DOM", "ES2019"],
+        "downlevelIteration": true,
+        "outDir": "./build/",
+        "baseUrl": "./"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}

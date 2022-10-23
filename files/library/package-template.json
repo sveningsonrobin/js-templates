@@ -1,0 +1,25 @@
+{
+    "name": "#PROJECT_NAME#",
+    "version": "1.0.0",
+    "private": true,
+    "sideEffects": false,
+    "files": ["dist"],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "prebuild": "rm -r ./dist || true",
+        "build": "tsc --project tsconfig.build.json",
+        "show-coverage": "open ./tests/.coverage/lcov-report/index.html",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.0",
+        "@babel/plugin-transform-runtime": "^7.15.0",
+        "@babel/preset-env": "^7.15.0",
+        "@babel/preset-typescript": "^7.15.0",
+        "@types/jest": "^26.0.14",
+        "babel-jest": "^27.1.1",
+        "jest": "^26.4.2",
+        "typescript": "^4.0.3"
+    }
+}
