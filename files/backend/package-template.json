@@ -38,5 +38,8 @@
         "predev": "rm -r ./dist || true",
         "dev": "webpack --config webpack-dev.config.js && node ./dist/dev.js",
         "start": "node ./dist/bundle.js"
+    },
+    "emp": {
+        "type": "backend"
     }
 }
